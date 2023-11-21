@@ -1,4 +1,4 @@
-package com.ll.sbb;
+package com.ll.sbb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;

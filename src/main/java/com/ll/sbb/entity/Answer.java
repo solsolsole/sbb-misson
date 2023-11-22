@@ -1,10 +1,8 @@
 package com.ll.sbb.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 
@@ -19,8 +17,7 @@ public class Answer {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    @CreatedDate
-    private LocalDateTime creatDate;
+    private LocalDateTime createDate;
 
     @ManyToOne
     private Question question;

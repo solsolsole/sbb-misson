@@ -21,6 +21,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     // 스프링 데브툴
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    // 스프링 시큐리티
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
     // 롬복
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

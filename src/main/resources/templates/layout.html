@@ -3,19 +3,23 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 >
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
-        <!-- sbb CSS -->
-        <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
-        <title>Hello, sbb!</title>
-    </head>
-    <body>
-        <!-- 기본 템플릿 안에 삽입될 내용 Start -->
-        <th:block layout:fragment="content"></th:block>
-        <!-- 기본 템플릿 안에 삽입될 내용 End -->
-    </body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+    <!-- sbb CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <title>Hello, sbb!</title>
+</head>
+<body>
+<!-- 네비게이션바(공통으로 사용하지 않더라고 유지보수를 위해서 따로 뺌) -->
+<nav th:replace="~{navbar :: navbarFragment}"></nav>
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+<th:block layout:fragment="content"></th:block>
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- Bootstrap JS -->
+<script th:src="@{/bootstrap.min.js}"></script>
+</body>
 </html>

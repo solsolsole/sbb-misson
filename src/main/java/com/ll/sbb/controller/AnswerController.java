@@ -1,7 +1,7 @@
 package com.ll.sbb.controller;
 
 import com.ll.sbb.entity.Question;
-import com.ll.sbb.golobal.AnswerForm;
+import com.ll.sbb.golobal.form.AnswerForm;
 import com.ll.sbb.service.AnswerService;
 import com.ll.sbb.service.QuestionService;
 import jakarta.validation.Valid;

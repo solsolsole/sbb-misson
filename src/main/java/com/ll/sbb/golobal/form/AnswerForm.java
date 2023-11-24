@@ -1,4 +1,4 @@
-package com.ll.sbb.golobal;
+package com.ll.sbb.golobal.form;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;

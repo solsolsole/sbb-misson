@@ -16,7 +16,7 @@ class SbbApplicationTests {
         for (int i = 0; i <= 300; i++) {
             String subject = String.format("테스트 데이터입니다:[%03d]", i);  // 정수를 세자리로 하고 빈자리는 0으로
             String content = "내용무";
-            this.questionService.create(subject, content);
+            this.questionService.create(subject, content, null);
         }
     }
 }
